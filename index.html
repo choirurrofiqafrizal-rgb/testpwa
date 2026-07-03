@@ -1,4 +1,21 @@
-<script>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Sederhana Saya</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Halo! Ini PWA Pertamamu</h1>
+    <p>Aplikasi ini bisa diakses secara offline dan diinstall ke perangkat Anda.</p>
+
+    <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('sw.js')
@@ -7,3 +24,6 @@
         });
     }
 </script>
+
+</body>
+</html>
